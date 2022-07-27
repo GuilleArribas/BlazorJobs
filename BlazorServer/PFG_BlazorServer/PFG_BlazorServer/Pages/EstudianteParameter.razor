@@ -1,0 +1,87 @@
+﻿@using PFG_BlazorServer.Models
+@using PFG_BlazorServer.Services
+@inject IEstudianteService EstudianteService
+@inject NavigationManager NavigationManager
+
+
+
+<EditForm Model="@estudiante" OnInvalidSubmit="CreateEstudiante">
+            <DataAnnotationsValidator />
+            <table class="table">
+                <tr>
+                    <td>NOMBRE</td>
+                    <td><InputText class="form-control col-sm-5" @bind-Value="@estudiante.Name"></InputText></td>
+                    &nbsp;<ValidationMessage For="@(() => estudiante.Name)" />
+                </tr>
+
+                 <tr>
+                    <td>APELLIDOS</td>
+                    <td><InputText class="form-control col-sm-5" @bind-Value="@estudiante.LastName"></InputText></td>
+                    &nbsp;<ValidationMessage For="@(() => estudiante.LastName)" />
+                </tr>
+
+                 <tr>
+                    <RadzenCard>
+                        <h4 class="mb-4">EMAIL</h4>
+                        <RadzenTextBox @bind-Value="@estudiante.Email"  ></RadzenTextBox>
+                        &nbsp;<ValidationMessage For="@(() => estudiante.Email)" />
+                    </RadzenCard>       
+                </tr>
+
+                 <tr>
+                    <td>TELEFONO</td>
+                    <td><InputText class="form-control col-sm-5" @bind-Value="@estudiante.Telefono"></InputText></td>
+                    &nbsp;<ValidationMessage For="@(() => estudiante.Telefono)" />
+                </tr>
+
+                 <tr>
+                    <RadzenCard>
+                        <h4 class="mb-4">FECHA NACIMIENTO</h4>
+                        <RadzenDatePicker @bind-Value=@estudiante.FechaDeNacimiento DateFormat="d" Class="w-100" />
+                    </RadzenCard>
+                </tr>
+
+                 <tr>
+                    <td>DESCRIPCION</td>
+                    <td><InputText class="form-control col-sm-5" @bind-Value="@estudiante.Descripcion"></InputText></td>
+                    &nbsp;<ValidationMessage For="@(() => estudiante.Descripcion)" />
+                </tr>
+
+                 <tr>
+                    <td>PAIS</td>
+                    <td><InputText class="form-control col-sm-5" @bind-Value="@estudiante.Pais"></InputText></td>
+                    &nbsp;<ValidationMessage For="@(() => estudiante.Pais)" />
+                </tr>
+
+                 <tr>
+                    <td>CIUDAD</td>
+                    <td><InputText class="form-control col-sm-5" @bind-Value="@estudiante.Ciudad"></InputText></td>
+                    &nbsp;<ValidationMessage For="@(() => estudiante.Ciudad)" />
+                </tr>
+            </table>
+
+            <div class="col-12 row">
+                <span class="col-12"></span>
+                <input type="submit" class="form-control col-6 btn btn-primary" value="Save" />
+            </div>
+
+
+        </EditForm>
+
+@code {
+
+    public Estudiante estudiante = new();
+
+    protected override void OnInitialized()
+    {
+        estudiante = new Estudiante ();
+    }
+
+    private async Task CreateEstudiante ()
+    {
+        if (await EstudianteService.InsertEstudiante(estudiante))
+            NavigationManager.NavigateTo("/");
+    }
+
+
+}

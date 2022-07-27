@@ -1,0 +1,12 @@
+C:\Users\guill\Desktop\PFG\BlazorWebAssembly\PFG_BlazorWS\PFG_BlazorWS\Shared\bin\Debug\net5.0\PFG_BlazorWS.Shared.deps.json
+C:\Users\guill\Desktop\PFG\BlazorWebAssembly\PFG_BlazorWS\PFG_BlazorWS\Shared\bin\Debug\net5.0\PFG_BlazorWS.Shared.dll
+C:\Users\guill\Desktop\PFG\BlazorWebAssembly\PFG_BlazorWS\PFG_BlazorWS\Shared\bin\Debug\net5.0\PFG_BlazorWS.Shared.pdb
+C:\Users\guill\Desktop\PFG\BlazorWebAssembly\PFG_BlazorWS\PFG_BlazorWS\Shared\obj\Debug\net5.0\PFG_BlazorWS.Shared.csproj.AssemblyReference.cache
+C:\Users\guill\Desktop\PFG\BlazorWebAssembly\PFG_BlazorWS\PFG_BlazorWS\Shared\obj\Debug\net5.0\PFG_BlazorWS.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\guill\Desktop\PFG\BlazorWebAssembly\PFG_BlazorWS\PFG_BlazorWS\Shared\obj\Debug\net5.0\PFG_BlazorWS.Shared.AssemblyInfoInputs.cache
+C:\Users\guill\Desktop\PFG\BlazorWebAssembly\PFG_BlazorWS\PFG_BlazorWS\Shared\obj\Debug\net5.0\PFG_BlazorWS.Shared.AssemblyInfo.cs
+C:\Users\guill\Desktop\PFG\BlazorWebAssembly\PFG_BlazorWS\PFG_BlazorWS\Shared\obj\Debug\net5.0\PFG_BlazorWS.Shared.csproj.CoreCompileInputs.cache
+C:\Users\guill\Desktop\PFG\BlazorWebAssembly\PFG_BlazorWS\PFG_BlazorWS\Shared\obj\Debug\net5.0\PFG_BlazorWS.Shared.dll
+C:\Users\guill\Desktop\PFG\BlazorWebAssembly\PFG_BlazorWS\PFG_BlazorWS\Shared\obj\Debug\net5.0\refint\PFG_BlazorWS.Shared.dll
+C:\Users\guill\Desktop\PFG\BlazorWebAssembly\PFG_BlazorWS\PFG_BlazorWS\Shared\obj\Debug\net5.0\PFG_BlazorWS.Shared.pdb
+C:\Users\guill\Desktop\PFG\BlazorWebAssembly\PFG_BlazorWS\PFG_BlazorWS\Shared\obj\Debug\net5.0\ref\PFG_BlazorWS.Shared.dll

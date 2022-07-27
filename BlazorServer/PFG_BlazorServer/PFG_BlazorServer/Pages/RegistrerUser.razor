@@ -1,0 +1,26 @@
+﻿@page "/registerUser"
+@using PFG_BlazorServer.Models
+@using PFG_BlazorServer.Services
+
+
+
+<AuthorizeView Roles="Admin, Empresa" Context="ContextEmpresa">
+    <Authorized>
+        <p>HELLO @ContextEmpresa.User.Identity.Name</p>
+        <EmpresaParameter />        
+    </Authorized>
+</AuthorizeView>
+
+<AuthorizeView Roles="Admin, Estudiante" Context="contextEstudiante">
+    <Authorized>
+        <p>HELLO @contextEstudiante.User.Identity.Name</p>
+        <EstudianteParameter />        
+    </Authorized>
+</AuthorizeView>
+
+
+
+@code {
+
+  
+}

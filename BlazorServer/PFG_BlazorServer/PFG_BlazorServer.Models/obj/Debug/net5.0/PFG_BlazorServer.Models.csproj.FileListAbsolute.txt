@@ -1,0 +1,12 @@
+C:\Users\guill\Desktop\PFG\BlazorServer\PFG_BlazorServer\PFG_BlazorServer.Models\bin\Debug\net5.0\PFG_BlazorServer.Models.deps.json
+C:\Users\guill\Desktop\PFG\BlazorServer\PFG_BlazorServer\PFG_BlazorServer.Models\bin\Debug\net5.0\PFG_BlazorServer.Models.dll
+C:\Users\guill\Desktop\PFG\BlazorServer\PFG_BlazorServer\PFG_BlazorServer.Models\bin\Debug\net5.0\PFG_BlazorServer.Models.pdb
+C:\Users\guill\Desktop\PFG\BlazorServer\PFG_BlazorServer\PFG_BlazorServer.Models\obj\Debug\net5.0\PFG_BlazorServer.Models.csproj.AssemblyReference.cache
+C:\Users\guill\Desktop\PFG\BlazorServer\PFG_BlazorServer\PFG_BlazorServer.Models\obj\Debug\net5.0\PFG_BlazorServer.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\guill\Desktop\PFG\BlazorServer\PFG_BlazorServer\PFG_BlazorServer.Models\obj\Debug\net5.0\PFG_BlazorServer.Models.AssemblyInfoInputs.cache
+C:\Users\guill\Desktop\PFG\BlazorServer\PFG_BlazorServer\PFG_BlazorServer.Models\obj\Debug\net5.0\PFG_BlazorServer.Models.AssemblyInfo.cs
+C:\Users\guill\Desktop\PFG\BlazorServer\PFG_BlazorServer\PFG_BlazorServer.Models\obj\Debug\net5.0\PFG_BlazorServer.Models.csproj.CoreCompileInputs.cache
+C:\Users\guill\Desktop\PFG\BlazorServer\PFG_BlazorServer\PFG_BlazorServer.Models\obj\Debug\net5.0\PFG_BlazorServer.Models.dll
+C:\Users\guill\Desktop\PFG\BlazorServer\PFG_BlazorServer\PFG_BlazorServer.Models\obj\Debug\net5.0\refint\PFG_BlazorServer.Models.dll
+C:\Users\guill\Desktop\PFG\BlazorServer\PFG_BlazorServer\PFG_BlazorServer.Models\obj\Debug\net5.0\PFG_BlazorServer.Models.pdb
+C:\Users\guill\Desktop\PFG\BlazorServer\PFG_BlazorServer\PFG_BlazorServer.Models\obj\Debug\net5.0\ref\PFG_BlazorServer.Models.dll

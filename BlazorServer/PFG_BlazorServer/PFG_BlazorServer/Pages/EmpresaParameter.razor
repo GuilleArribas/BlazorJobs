@@ -1,0 +1,82 @@
+﻿@using PFG_BlazorServer.Models
+@using PFG_BlazorServer.Services
+@inject IEmpresaService EmpresaService
+@inject NavigationManager NavigationManager
+
+<EditForm Model="@empresa" OnValidSubmit="@CreateEmpresa">
+            <DataAnnotationsValidator />
+                <table class="table">
+                    <tr>
+                        <td>NOMBRE</td>
+                        <td><InputText class="form-control col-sm-5" @bind-Value="@empresa.Name"></InputText></td>
+                        &nbsp;<ValidationMessage For="@(() => empresa.Name)" />
+                    </tr>
+                    <tr>
+                        <td>INDUSTRIA</td>
+                        <td><InputText class="form-control col-sm-5" @bind-Value="@empresa.Industry"></InputText></td>
+                        &nbsp;<ValidationMessage For="@(() => empresa.Industry)" />
+                    </tr>
+                    <tr>
+                        <td>EMAIL</td>
+                        <td><InputText class="form-control col-sm-5" @bind-Value="@empresa.Email"></InputText></td>
+                        &nbsp;<ValidationMessage For="@(() => empresa.Email)" />
+                    </tr>
+                    <tr>
+                        <td>TELEFONO</td>
+                        <td><InputText class="form-control col-sm-5" @bind-Value="@empresa.Telefono"></InputText></td>
+                        &nbsp;<ValidationMessage For="@(() => empresa.Telefono)" />
+                    </tr>
+                    <tr>
+                        <td>DESCRIPTION</td>
+                        <td><InputTextArea class="form-control col-sm-5" @bind-Value="@empresa.Descripcion"></InputTextArea></td>
+                        &nbsp;<ValidationMessage For="@(() => empresa.Descripcion)" />
+                    </tr>
+                    <tr>
+                        <td>PAIS</td>
+                        <td><InputText class="form-control col-sm-5" @bind-Value="@empresa.Pais"></InputText></td>
+                        &nbsp;<ValidationMessage For="@(() => empresa.Pais)" />
+                    </tr>
+                    <tr>
+                        <td>CIUDAD</td>
+                        <td><InputText class="form-control col-sm-5" @bind-Value="@empresa.Ciudad"></InputText></td>
+                        &nbsp;<ValidationMessage For="@(() => empresa.Ciudad)" />
+                    </tr>
+                    <tr>
+                        <td>CALLE</td>
+                        <td><InputText class="form-control col-sm-5" @bind-Value="@empresa.Calle"></InputText></td>
+                        &nbsp;<ValidationMessage For="@(() => empresa.Calle)" />
+                    </tr>
+                    <tr>
+                        <td>CODIGO POSTAL</td>
+                        <td><InputNumber class="form-control col-sm-5" @bind-Value="@empresa.CodigoPostal"></InputNumber></td>
+                        &nbsp;<ValidationMessage For="@(() => empresa.CodigoPostal)" />
+                    </tr>
+
+                </table>
+
+                <div class="col-12 row">
+                    <span class="col-12"></span>
+                    <input type="submit" class="form-control col-6 btn btn-primary" value="Save" />
+                </div>
+
+        </EditForm>
+
+
+
+
+@code {
+
+    public Empresa empresa { get; set; }
+
+    protected override void OnInitialized()
+    {
+        empresa = new Empresa ();
+    }
+
+    private async Task CreateEmpresa ()
+    {
+        //empresa.Email = "g@gmail.com";
+        if (await EmpresaService.InsertEmpresa(empresa))
+            NavigationManager.NavigateTo("/");
+    }
+}
